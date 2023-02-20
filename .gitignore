@@ -1,0 +1,10 @@
+.idea/
+.DS_Store
+__pycache__
+base/Pipfile.lock
+log.html
+report.html
+output.xml
+.env
+*.pyc
+venv/*
