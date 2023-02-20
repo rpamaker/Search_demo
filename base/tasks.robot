@@ -10,5 +10,5 @@ Library         libraries/SendMails.py
 *** Tasks ***
 run Task     
     ${articulos}=    Open Web    ${BUSCADOR}
-    Enviar mails    ${articulos}    ${gmail_account}    ${send_mails}    ${gmail_password}  
+    Enviar mails    ${articulos}    ${send_mails}    ${gmail_password}    ${gmail_account}      
     Close Browser
