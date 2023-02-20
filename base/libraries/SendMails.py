@@ -5,15 +5,15 @@ from decouple import config
 
 
 
-def enviar_mensaje(results,user_env,passwor_env,recive_env):
+def enviar_mensaje(results,send_mails,gmail_password,gmail_account):
     host = 'smtp.gmail.com'
     port = 587
-    user = user_env
-    password = passwor_env
+    user = send_mails
+    password = gmail_password
 
     msg = MIMEMultipart()
-    msg['From'] = user_env
-    msg['To'] = recive_env
+    msg['From'] = send_mails
+    msg['To'] = gmail_account
     msg['Subject'] = 'Links de mercado libre'
 
     body = ''

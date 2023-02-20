@@ -13,9 +13,9 @@ run Task
 
 *** Keywords ***
 run Task
-    [Arguments]    ${recive_env}    ${user_env}    ${passwor_env}
+    [Arguments]    ${gmail_account}    ${send_mails}    ${gmail_password}    ${search}
    
-    ${articulos}=    Open Web
-    Enviar mails    ${articulos}    ${recive_env}    ${user_env}    ${passwor_env}  
+    ${articulos}=    Open Web    ${search}
+    Enviar mails    ${articulos}    ${gmail_account}    ${send_mails}    ${gmail_password}  
     Close Browser
 
