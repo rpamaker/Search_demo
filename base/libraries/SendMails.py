@@ -1,11 +1,10 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from decouple import config
 
 
 
-def enviar_mensaje(results,send_mails,gmail_password,gmail_account):
+def enviar_mails(results,send_mails,gmail_password,gmail_account):
     host = 'smtp.gmail.com'
     port = 587
     user = send_mails
